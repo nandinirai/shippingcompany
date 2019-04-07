@@ -5,7 +5,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 
 var mongoose = require("mongoose");
